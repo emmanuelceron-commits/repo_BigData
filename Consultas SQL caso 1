@@ -1,0 +1,10 @@
+https://www.sqlnoir.com/cases/001-The-Vanishing-Briefcase
+
+-- Buscando casos del lugar donde ocurrió el robo
+SELECT * from crime_scene where location = 'Blue Note Lounge';
+
+-- Buscando sospechosos que coincidan
+SELECT * from suspects where attire = 'trench coat' and scar = 'left cheek';
+
+-- Buscando entrevistas con ID de sospechosos
+select * from interviews WHERE suspect_id IN (3, 83) and transcript is not NULL;
